@@ -9,5 +9,11 @@ document.getElementById("center-third").addEventListener("click", function () {
     thirdFriend.style.textAlign = "center"
 })
 document.getElementById("add-friend").addEventListener("click", function () {
-    console.log("add friend")
+    let friendsContainer = document.getElementById("friends");
+    let moreFriend = document.createElement("div")
+    moreFriend.innerHTML = `
+    <h3 class ="friend-name">New Friend</h3>
+    <p>More friend added</p>
+    `
+    friendsContainer.appendChild(moreFriend);
 })
